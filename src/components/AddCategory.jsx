@@ -11,7 +11,7 @@ export const AddCategory = ({ handleAddCategories }) => {
 
     const onSubmit = ( event ) => {
         event.preventDefault()  
-       if(inputValue.trim().length <=1) return;
+       if(inputValue.trim().length <= 1) return;
         handleAddCategories( inputValue.trim() )
         setInputValue('')
         // console.log(setInputValue) //lo que envio para actualizar la informacion en el padre
